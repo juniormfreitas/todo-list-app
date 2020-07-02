@@ -1,14 +1,17 @@
 import React from "react";
-import "../scss/main.scss";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../scss/main.scss";
+
+import Layout from "../templates/LayoutWrap";
+import Sidebar from "./Sidebar";
+import Content from "./Content";
 
 function App() {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-md-center">Todo List App</div>
-      </div>
-    </div>
+    <Layout>
+      <Sidebar />
+      <Content />
+    </Layout>
   );
 }
 
