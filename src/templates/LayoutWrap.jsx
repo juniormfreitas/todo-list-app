@@ -1,10 +1,22 @@
 import React from 'react';
-import { Flex } from '@adobe/react-spectrum';
+import { Grid } from '@adobe/react-spectrum';
+import LayoutHeader from '../components/LayoutHeader';
+import LayoutFooter from '../components/LayoutFooter';
+import { HEADER_HEIGHT, FOOTER_HEIGHT } from '../constants';
 
 const LayoutWrap = ({ children }) => (
-  <Flex direction="column" gap="size-100">
+  <Grid
+    areas={['header  header', 'sidebar content', 'footer  footer']}
+    columns={['1fr', '3fr']}
+    rows={[HEADER_HEIGHT, 'auto', FOOTER_HEIGHT]}
+    height="size-6000"
+    gap="size-100"
+    minHeight="100vh"
+  >
+    <LayoutHeader />
     {children}
-  </Flex>
+    <LayoutFooter />
+  </Grid>
 );
 
 export default LayoutWrap;

@@ -1,15 +1,12 @@
 import React from 'react';
+import { View } from '@adobe/react-spectrum';
 
 const Sidebar = () => (
-  <div className="col-md-3 sidebar">
-    {/* User avatar */}
-    {/* User's name */}
-
-    {/* Trash bin */}
-    {/* Old tasks */}
-
-    {/* Log out */}
-  </div>
+  <>
+    <View backgroundColor="blue-600" gridArea="sidebar">
+      This is a sidebar
+    </View>
+  </>
 );
 
 export default Sidebar;
