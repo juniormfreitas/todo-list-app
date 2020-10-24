@@ -2,6 +2,12 @@
   "name": "todo-list-app",
   "version": "0.0.1",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniormfreitas/todo-list-app.git"
+  },
+  "homepage": "https://github.com/juniormfreitas/todo-list-app/#readme",
+  "author": "J. de Freitas",
   "dependencies": {
     "@adobe/react-spectrum": "^3.4.0",
     "@testing-library/jest-dom": "^4.2.4",
