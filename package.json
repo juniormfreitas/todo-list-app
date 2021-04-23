@@ -9,9 +9,9 @@
   "author": "J. de Freitas",
   "dependencies": {
     "@adobe/react-spectrum": "^3.9.0",
-    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^13.1.2",
+    "@testing-library/user-event": "^13.1.5",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
