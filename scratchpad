@@ -1,0 +1,27 @@
+import { useEffect, useState } from "react";
+const Todo = ({ id }) => {
+  const [todo, setTodo] = useState({});
+  const getTodo = async () => {
+    const results = await fetch(
+      `https://jsonplaceholder.typicode.com/todos/${id}`
+    );
+    const data = await results.json();
+    setTodo(data);
+  };
+  useEffect(() => {
+    getTodo();
+  }, [id]);
+return <p>{JSON.stringify(todo)}</p>;
+};
+export default function App() {
+  const [id, setId] = useState(1);
+  return (
+    <div className="App">
+      <button onClick={() => setId((id) => id + 1)}>increment id</button>
+      <Todo id={id} />
+    </div>
+  );
+}
+
+
+https://jsonplaceholder.typicode.com/todos/
